@@ -7,13 +7,35 @@ The unaltered images, as well as the super-resolved images using the three metho
 Initial results show that the recognition performance for the LFW dataset was the best for the unaltered low resolution (LR) images. ESRGAN was next in performance, then bicubic interpolation, then GFPGAN. 
 These results are surprising based on the perceptual quality of the images shown below. 
 
-## Some representative results using colored and cropped LFW images
+## Qualitative Results
+
+### Some representative results using colored and cropped LFW images
 ![color2](https://user-images.githubusercontent.com/95577984/167269199-c9c40129-7ea9-4e2a-a50a-ca0ac166b41f.png)
 ![color3](https://user-images.githubusercontent.com/95577984/167269205-3e2b0f88-dd03-4a68-bfe3-8b5ba930d28c.png)
 ![color5](https://user-images.githubusercontent.com/95577984/167269209-2ed2b9da-bdd2-4bf2-b2f2-261de4b0a07c.png)
 ![color6](https://user-images.githubusercontent.com/95577984/167269212-c538eed1-4db8-4af4-9178-23f78acca2a1.png)
-## Some representative results using Black and White and cropped LFW images
+### Some representative results using Black and White and cropped LFW images
 ![BW1](https://user-images.githubusercontent.com/95577984/167269235-defde1d3-4850-4ec1-976b-3dbfb6ce09c7.png)
 ![BW2](https://user-images.githubusercontent.com/95577984/167269237-49639e04-43b9-4865-8aaa-4dd8240c5942.png)
 ![BW3](https://user-images.githubusercontent.com/95577984/167269238-0a49ab81-e400-43b5-8a96-2d516aa7eee8.png)
 ![BW4](https://user-images.githubusercontent.com/95577984/167269242-c8a2e64c-406a-45c3-a9a1-39cdf1403b1c.png)
+
+## Quantitative Results
+
+### Facenet Facial Recognition results for LFW cropped faces in color
+| | Input Image| Bicubic Interpolation | ESRGAN | GFPGAN|
+|---|---|---|---|---|
+|Accuracy|**87.8%**|81.9%|83.5%|80.5%|
+|Precision|99.4%|99.3%|**99.9%**|**99.9%**|
+|Recall|**76.1%**|64.2%|67.0%|61.1%|
+|F1 Score|**86.2%**|78.0%|80.2%|75.8%|
+
+### Facenet Facial Recognition results for LFW cropped faces in Black and White
+| | Input Image| Bicubic Interpolation | ESRGAN | GFPGAN|
+|---|---|---|---|---|
+|Accuracy| **85.0%**| 79.0%| 81.0%| 79.9%|
+|Precision| 99.7%| 99.5%| **99.9%**| 99.7%|
+|Recall| **70.2%**| 58.3%| 62.2%| 60.0%|
+|F1 Score| **82.4%**| 73.5% |76.6%| 74.9%|
+
+
